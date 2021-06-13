@@ -1,0 +1,118 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+
+}
+h1{
+    text-align: center;
+    font-size: 50px;
+}
+h2{
+  text-align: center;
+}
+.contenedor{
+    width: 100%;
+    margin: auto;
+}
+.caja1{
+    margin: 10px;
+    font-size: 50px;
+    text-align: center;
+    background-image: url("../img/azul.jpg")
+
+}
+.caja2{
+    margin: 10px;
+    font-size: 50px;
+    text-align: center;
+    background-image: url("../img/azuloscuro.png")
+}
+.caja3{
+    margin: 10px;
+    font-size: 50px;
+    text-align: center;
+    background-image: url("../img/amarillo.png")
+}
+.caja4{
+    margin: 10px;
+    font-size: 50px;
+    text-align: center;
+    background-image: url("../img/verde.png")
+}
+.caja5{
+    margin: 10px;
+    font-size: 50px;
+    text-align: center;
+    background-image: url("../img/blanco.png")
+}
+.caja6{
+    margin: 10px;
+    font-size: 50px;
+    text-align: center;
+    background-image: url("../img/naranja.png")
+
+}
+.caja7{
+    margin: 10px;
+    font-size: 50px;
+    text-align: center;
+    background-image: url("../img/lila.png")
+
+}
+.caja8{
+    margin: 10px;
+    font-size: 50px;
+    text-align: center;
+    background-image: url("../img/rosa.png")
+
+}
+.caja__columna div{
+
+    padding: 2em;
+}
+.caja__columna{
+    display: grid;
+}
+@media(min-width:520px){
+    .caja__columna{
+        grid-template-columns: repeat(2,1fr);
+    }
+
+}
+@media(min-width:1024px){
+    .contenedor{
+        width: 1024px;
+    }
+    .caja__columna{
+       grid-auto-rows: minmax(250px,auto);
+        grid-template-columns: repeat(3,1fr);
+    }
+    .caja__columna .caja:nth-child(2){
+        grid-column:3 /5;
+        grid-row: 7/4;
+        a {
+          text-decoration: none;
+          display: inline-block;
+          padding: 8px 16px;
+        }
+
+        a:hover {
+          background-color: #ddd;
+          color: black;
+        }
+
+        .previous {
+          background-color: #f1f1f1;
+          color: black;
+        }
+
+        .next {
+          background-color: #04AA6D;
+          color: white;
+        }
+
+        .round {
+          border-radius: 50%;
+        }
